@@ -2,7 +2,7 @@ FROM		centos:centos7
 
 MAINTAINER	Viacheslav Kalashnikov <xemuliam@gmail.com>
 
-ENV		DIST_MIRROR http://public-repo-1.hortonworks.com/HDF/2.0.0.0/HDF-2.0.0.0-579.tar.gz
+ENV		DIST_MIRROR http://public-repo-1.hortonworks.com
 ENV		HDF_HOME /opt/hdf
 ENV		VERSION 2.0.0.0
 ENV		REVISION 579
