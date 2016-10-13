@@ -25,8 +25,8 @@ COPY zookeeper.properties /${HDF_HOME}/nifi/conf/
 
 EXPOSE 8080 8081
 
-VOLUME ["/opt/datafiles","/opt/scriptfiles","/opt/certs", "${NIFI_HOME}/logs","${NIFI_HOME}/flowfile_repository", "${NIFI_HOME}/database_repository", "${NIFI_HOME}/content_repository", "${NIFI_HOME}/provenance_repository"]
+VOLUME ["/opt/datafiles","/opt/scriptfiles","/opt/certs", "${HDF_HOME}/nifi/logs","${HDF_HOME}/nifi/flowfile_repository", "${HDF_HOME}/nifi/database_repository", "${HDF_HOME}/nifi/content_repository", "${HDF_HOME}/nifi/provenance_repository"]
 
-WORKDIR ${NIFI_HOME}/nifi
+WORKDIR ${HDF_HOME}/nifi
 RUN chmod +x ./start_hdf.sh
 CMD ["./start_hdf.sh"]
