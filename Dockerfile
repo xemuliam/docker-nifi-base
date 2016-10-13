@@ -13,7 +13,7 @@ ENV		MYID NA
 
 RUN yum update -y &&\
   yum install -y java-1.8.0-openjdk-devel tar && \
-  mkdir -p /opt/nifi && \
+  mkdir -p ${HDF_HOME} && \
   curl ${DIST_MIRROR}/HDF/${VERSION}/HDF-${VERSION}-${REVISION}.tar.gz | tar xvz -C ${HDF_HOME} --strip-components=1 && \
   sed -i '/java.arg.1/a java.arg.15=-Djava.security.egd=file:/dev/./urandom' ${HDF_HOME}/nifi/conf/bootstrap.conf && \
   sed -i '/nifi.flow/s#conf/#flow/#g' ${HDF_HOME}/nifi/conf/nifi.properties && \
