@@ -9,16 +9,16 @@ ENV	DIST_MIRROR=http://public-repo-1.hortonworks.com \
 	BANNER_TEXT=Docker-HDF-2.0 \
 	INSTANCE_ROLE=single-node \
 	NODES_LIST=localhost:2181,localhost:2182,localhost:2183 \
-	MYID 1
+	MYID=1
 
 RUN yum update -y && \
-  yum install -y java-1.8.0-openjdk-devel tar && \
-  mkdir -p ${HDF_HOME} && \
-  curl ${DIST_MIRROR}/HDF/${VERSION}/HDF-${VERSION}-${REVISION}.tar.gz | tar xvz -C ${HDF_HOME} --strip-components=2 && \
-  sed -i '/java.arg.1/a java.arg.15=-Djava.security.egd=file:/dev/./urandom' ${HDF_HOME}/conf/bootstrap.conf && \
-  sed -i '/nifi.flow/s#conf/#flow/#g' ${HDF_HOME}/conf/nifi.properties && \
-  mkdir ${HDF_HOME}/flow && \
-  yum clean all
+	yum install -y java-1.8.0-openjdk-devel tar && \
+	mkdir -p ${HDF_HOME} && \
+	curl ${DIST_MIRROR}/HDF/${VERSION}/HDF-${VERSION}-${REVISION}.tar.gz | tar xvz -C ${HDF_HOME} --strip-components=2 && \
+	sed -i '/java.arg.1/a java.arg.15=-Djava.security.egd=file:/dev/./urandom' ${HDF_HOME}/conf/bootstrap.conf && \
+	sed -i '/nifi.flow/s#conf/#flow/#g' ${HDF_HOME}/conf/nifi.properties && \
+	mkdir ${HDF_HOME}/flow && \
+	yum clean all
 
 COPY start_hdf.sh /${HDF_HOME}/
 COPY zookeeper.properties /${HDF_HOME}/conf/
