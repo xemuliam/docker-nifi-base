@@ -1,6 +1,6 @@
 FROM	centos:centos7
 
-MAINTAINER	Viacheslav Kalashnikov <xemuliam@gmail.com>
+MAINTAINER Viacheslav Kalashnikov <xemuliam@gmail.com>
 
 ENV	DIST_MIRROR=http://public-repo-1.hortonworks.com \
 	HDF_HOME=/opt/hdf \
