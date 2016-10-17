@@ -1,5 +1,5 @@
 # docker-hdf ![](https://images.microbadger.com/badges/version/xemuliam/docker-hdf:2.0.svg) ![](https://images.microbadger.com/badges/image/xemuliam/docker-hdf:2.0.svg)
-[Docker](https://www.docker.com/what-docker) image for [Hortonworks HDF](http://hortonworks.com/products/data-center/hdf/) based on CentOs and OpenJDK
+[Docker](https://www.docker.com/what-docker) image for [Hortonworks DataFlow](http://hortonworks.com/products/data-center/hdf/) based on CentOs and OpenJDK
 
 
                       ##           .
@@ -14,7 +14,7 @@
 
 # Overview
 
-Dockerized single- and multi-host NiFi.
+Dockerized single-host HDF.
 No SSL! No scaling!
 
 Deployment options out of the box:
