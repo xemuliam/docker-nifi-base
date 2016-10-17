@@ -8,8 +8,8 @@ ENV		VERSION 2.0.0.0
 ENV		REVISION 579
 ENV		BANNER_TEXT Docker-HDF-2.0
 ENV		INSTANCE_ROLE single-node
-ENV		NODES_LIST NA
-ENV		MYID NA
+ENV		NODES_LIST N/A
+ENV		MYID N/A
 
 RUN yum update -y &&\
   yum install -y java-1.8.0-openjdk-devel tar && \
