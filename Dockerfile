@@ -11,7 +11,7 @@ ENV		INSTANCE_ROLE single-node
 ENV		NODES_LIST N/A
 ENV		MYID N/A
 
-RUN yum update -y &&\
+RUN yum update -y && \
   yum install -y java-1.8.0-openjdk-devel tar && \
   mkdir -p ${HDF_HOME} && \
   curl ${DIST_MIRROR}/HDF/${VERSION}/HDF-${VERSION}-${REVISION}.tar.gz | tar xvz -C ${HDF_HOME} --strip-components=2 && \
