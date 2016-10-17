@@ -23,7 +23,7 @@ RUN yum update -y &&\
 COPY start_hdf.sh /${HDF_HOME}/nifi/
 COPY zookeeper.properties /${HDF_HOME}/nifi/conf/
 
-EXPOSE 8080 8081
+EXPOSE 8080 8081 8082 8083
 
 VOLUME ["/opt/datafiles","/opt/scriptfiles","/opt/certs", "${HDF_HOME}/nifi/logs","${HDF_HOME}/nifi/flowfile_repository", "${HDF_HOME}/nifi/database_repository", "${HDF_HOME}/nifi/content_repository", "${HDF_HOME}/nifi/provenance_repository"]
 
