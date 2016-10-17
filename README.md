@@ -72,7 +72,10 @@ If you need to play with cluster it is required to follow next steps:
 
 1. Repeat steps from list above to create three containers
 2. Go to each container settings and make above changes:
-2.1 Change MYID parameter according to next rule: each container should have unique MYID number within range 1..3
-2.2 Change BANNER_TEXT to be able to recognize each node from first look
-2.3. Click SAVE button and watch reloading of container content
-3. Enjoy! :)
+  2.1 Change MYID parameter according to next rule: each container should have unique MYID number within range 1..3
+  2.2 Change INSTANCE_ROLE parameter to `cluster-node`
+  2.2 Change BANNER_TEXT to be able to recognize each node from first look
+  2.3. Click SAVE button and watch reloading of container content
+
+# Enjoy! :)
+
