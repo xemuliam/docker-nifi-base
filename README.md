@@ -53,14 +53,14 @@ Ensure the following pre-requisites are met (due to some blocker bugs in earlier
 - Docker Machine 0.6.0+
 - Kitematic 0.12
 
-(all downloadable as a single Docker Toolbox package as well)
+(all downloadable as a single [Docker Toolbox](https://www.docker.com/products/docker-toolbox) package as well)
 
 
 # How to use
 
 To try out NiFi on Docker:
 
-1. Start Kitematic (from Docker Toolbox set)
+1. Start Kitematic
 2. Enter `xemuliam` in serach box
 3. Choose `docker-hdf` image
 4. Click `Create` button
