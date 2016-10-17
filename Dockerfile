@@ -2,14 +2,14 @@ FROM		centos:centos7
 
 MAINTAINER	Viacheslav Kalashnikov <xemuliam@gmail.com>
 
-ENV		DIST_MIRROR http://public-repo-1.hortonworks.com
-ENV		HDF_HOME /opt/hdf
-ENV		VERSION 2.0.0.0
-ENV		REVISION 579
-ENV		BANNER_TEXT Docker-HDF-2.0
-ENV		INSTANCE_ROLE single-node
-ENV		NODES_LIST localhost:2181,localhost:2182,localhost:2183
-ENV		MYID N/A
+ENV		DIST_MIRROR=http://public-repo-1.hortonworks.com \
+			HDF_HOME=/opt/hdf \
+			VERSION=2.0.0.0 \
+			REVISION=579 \
+			BANNER_TEXT=Docker-HDF-2.0 \
+			INSTANCE_ROLE=single-node \
+			NODES_LIST=localhost:2181,localhost:2182,localhost:2183 \
+			MYID 1
 
 RUN yum update -y && \
   yum install -y java-1.8.0-openjdk-devel tar && \
