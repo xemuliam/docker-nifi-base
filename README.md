@@ -1,5 +1,5 @@
-# docker-nifi ![](https://images.microbadger.com/badges/version/xemuliam/docker-nifi:1.0.0.svg) ![](https://images.microbadger.com/badges/image/xemuliam/docker-nifi:1.0.0.svg)
-[Docker](https://www.docker.com/what-docker) image for [Apache NiFi](https://nifi.apache.org/) based on CentOs and OpenJDK
+# docker-hdf ![](https://images.microbadger.com/badges/version/xemuliam/docker-hdf:2.0.svg) ![](https://images.microbadger.com/badges/image/xemuliam/docker-hdf:2.0.svg)
+[Docker](https://www.docker.com/what-docker) image for [Hortonworks HDF](http://hortonworks.com/products/data-center/hdf/) based on CentOs and OpenJDK
 
 
                       ##           .
@@ -19,7 +19,7 @@ No SSL! No scaling!
 
 Deployment options:
 - Standalone NiFi node (by default built directly from image)
-- Multi-host NiFi cluster which contains three NiFi nodes on different Docker network hosts
+- Single-host NiFi cluster which contains three NiFi nodes on different Docker containers
 
 
 # Migration from 0.7.0
