@@ -12,7 +12,7 @@ do_cluster_node_configure() {
 # NiFi properties
   sed -i "s/nifi\.cluster\.protocol\.is\.secure=true/nifi.cluster.protocol.is.secure=false/g" ${HDF_HOME}/nifi/conf/nifi.properties
   sed -i "s/nifi\.cluster\.is\.node=false/nifi.cluster.is.node=true/g" ${HDF_HOME}/nifi/conf/nifi.properties
-  sed -i "s/nifi\.cluster\.node\.address=.*/nifi.cluster.node.address=${HOSTNAME}/g" ${HDF_HOME}/nifi/conf/nifi.properties
+#  sed -i "s/nifi\.cluster\.node\.address=.*/nifi.cluster.node.address=${HOSTNAME}/g" ${HDF_HOME}/nifi/conf/nifi.properties
   sed -i "s/nifi\.cluster\.node\.protocol\.port=.*/nifi.cluster.node.protocol.port=2000${MYID}/g" ${HDF_HOME}/nifi/conf/nifi.properties
   sed -i "s/nifi\.web\.http\.port=.*/nifi.web.http.port=808${MYID}/g" ${HDF_HOME}/nifi/conf/nifi.properties
   sed -i "s/nifi\.state\.management\.embedded\.zookeeper\.start=false/nifi.state.management.embedded.zookeeper.start=true/g" ${HDF_HOME}/nifi/conf/nifi.properties
