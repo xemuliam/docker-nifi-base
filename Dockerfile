@@ -8,7 +8,7 @@ ENV		VERSION 2.0.0.0
 ENV		REVISION 579
 ENV		BANNER_TEXT Docker-HDF-2.0
 ENV		INSTANCE_ROLE single-node
-ENV		NODES_LIST N/A
+ENV		NODES_LIST localhost:2181,localhost:2182,localhost:2183
 ENV		MYID N/A
 
 RUN yum update -y && \
