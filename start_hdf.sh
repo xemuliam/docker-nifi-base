@@ -26,7 +26,7 @@ do_cluster_node_configure() {
   echo ${MYID} > ${HDF_HOME}/state/zookeeper/myid
 
 # Zookeeper properties
-  sed -i "s/clientPort=.*/clientPort=218${MYID}/g" ${HDF_HOME}/conf/nifi.properties
+  sed -i "s/clientPort=.*/clientPort=218${MYID}/g" ${HDF_HOME}/conf/zookeeper.properties
 #  sed -i "/^server\.1=/q" ${HDF_HOME}/conf/zookeeper.properties; sed -i "s/^server\.1=.*/server.1=/g" ${HDF_HOME}/conf/zookeeper.properties
 }
 
