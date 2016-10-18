@@ -1,4 +1,4 @@
-# NiFi-base ![](https://images.microbadger.com/badges/version/xemuliam/hdf-base:2.0.svg) ![](https://images.microbadger.com/badges/image/xemuliam/hdf-base:2.0.svg)
+# NiFi-base ![](https://images.microbadger.com/badges/version/xemuliam/nifi-base:1.0.0.svg) ![](https://images.microbadger.com/badges/image/xemuliam/nifi-base:1.0.0.svg)
 Basic and clean [Docker](https://www.docker.com/what-docker) image for [Apache NiFi](http://nifi.apache.org), based on [Alpine](http://alpinelinux.org) and [OpenJDK](http://openjdk.java.net)
 
                         ##         .
