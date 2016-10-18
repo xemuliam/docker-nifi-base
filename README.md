@@ -1,4 +1,4 @@
-# docker-hdf ![](https://images.microbadger.com/badges/version/xemuliam/docker-hdf:2.0.svg) ![](https://images.microbadger.com/badges/image/xemuliam/docker-hdf:2.0.svg)
+# HDF-base ![](https://images.microbadger.com/badges/version/xemuliam/hdf-base:2.0.svg) ![](https://images.microbadger.com/badges/image/xemuliam/hdf-base:2.0.svg)
 Base and clean [Docker](https://www.docker.com/what-docker) image for [Hortonworks DataFlow](http://hortonworks.com/products/data-center/hdf/) based on Alpine and OpenJDK
 
 
