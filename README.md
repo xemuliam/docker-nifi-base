@@ -1,5 +1,5 @@
 # HDF-base ![](https://images.microbadger.com/badges/version/xemuliam/hdf-base:2.0.svg) ![](https://images.microbadger.com/badges/image/xemuliam/hdf-base:2.0.svg)
-Base and clean [Docker](https://www.docker.com/what-docker) image for [Hortonworks DataFlow](http://hortonworks.com/products/data-center/hdf/) based on Alpine and OpenJDK
+Basic and clean [Docker](https://www.docker.com/what-docker) image for [Hortonworks DataFlow](http://hortonworks.com/products/data-center/hdf/) based on Alpine and OpenJDK
 
                         ##         .
                   ## ## ##        ==
@@ -26,7 +26,9 @@ Can work under Kitematic
 - 8443 - HDF web application secure port
 
 
-# Official Apache NiFi Documentation and Guides
+# Official Documentation and Guides
+
+Please bear in mind that HDF powered by Apache NiFi
 
 - [Overview](https://nifi.apache.org/docs.html)
 - [User Guide](https://nifi.apache.org/docs/nifi-docs/html/user-guide.html)
