@@ -1,5 +1,7 @@
 FROM       openjdk:alpine
 MAINTAINER Viacheslav Kalashnikov <xemuliam@gmail.com>
+LABEL      VERSION="2.0" \
+           RUN="docker run -d -p 8080:8080 -p 8443:8443 xemuliam/hdf-base"
 ENV        DIST_MIRROR=http://public-repo-1.hortonworks.com \
            HDF_HOME=/opt/hdf \
            VERSION=2.0.0.0 \
