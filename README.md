@@ -1,16 +1,14 @@
 # HDF-base ![](https://images.microbadger.com/badges/version/xemuliam/hdf-base:2.0.svg) ![](https://images.microbadger.com/badges/image/xemuliam/hdf-base:2.0.svg)
 Base and clean [Docker](https://www.docker.com/what-docker) image for [Hortonworks DataFlow](http://hortonworks.com/products/data-center/hdf/) based on Alpine and OpenJDK
 
-
-                      ##           .
-                  ## ## ##         ==
-               ## ## ## ## ##     ===
-           /"""""""""""""""""\____/ ===
-      ~~~ {~~ ~~~~ ~~~ ~~~~ ~~~ ~~ /  ===- ~~~
-           \______ o   HDF      __/
-             \    \    2.0   __/
-              \____\________/
-
+                        ##         .
+                  ## ## ##        ==
+               ## ## ## ## ##    ===
+           /"""""""""""""""""\___/ ===
+      ~~~ {~~ ~~~~ ~~~ ~~~~ ~~~ ~ /  ===- ~~~
+           \______ o   HDF     __/
+             \    \    2.0  __/
+              \____\_______/
 
 # Overview
 
@@ -53,9 +51,7 @@ Ensure the following pre-requisites are met (due to some blocker bugs in earlier
 (all downloadable as a single [Docker Toolbox](https://www.docker.com/products/docker-toolbox) package as well)
 
 
-# How to use
-
-To try out NiFi on Docker:
+# How to use from Kitematic
 
 1. Start Kitematic
 2. Enter `xemuliam` in serach box
@@ -65,5 +61,20 @@ To try out NiFi on Docker:
 Kitematic will assign all ports and you'll be able to run HDF web-interface directly from Kitematic.
 
 
-# Enjoy! :)
+# How to use from Docker CLI
 
+1. Start Docker Quickstart Terminal
+2. Run command
+  ```
+  $> docker run -d -p 8080:8080 -p 8443:8443 xemuliam/hdf-base
+  ```
+3. Check Docker machine IP
+  ```
+  $> docker-machine ls
+  ```
+4. Use IP from previous step in address bar of your favorite browser
+  ```
+  http://192.168.99.100:8080/nifi
+  ```
+
+# Enjoy! :)
