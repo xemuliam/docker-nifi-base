@@ -4,7 +4,7 @@ LABEL      VERSION="1.0.0" \
            RUN="docker run -d -p 8080:8080 -p 8443:8443 xemuliam/nifi-base"
 ENV        DIST_MIRROR=http://archive.apache.org/dist/nifi/ \
            NIFI_HOME=/opt/nifi \
-           VERSION=1.0.0
+           VERSION=0.7.1
 RUN        apk update && apk add --upgrade curl && \
            mkdir -p ${NIFI_HOME} && \
            curl ${DIST_MIRROR}/${VERSION}/nifi-${VERSION}-bin.tar.gz | tar xvz -C ${NIFI_HOME} && \
