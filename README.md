@@ -23,6 +23,7 @@ Can work under Kitematic
 # Exposed ports
 
 - 8080 - NiFi web application port
+- 8081 - NiFi ListenHTTP processor port
 - 8443 - NiFi web application secure port
 
 
