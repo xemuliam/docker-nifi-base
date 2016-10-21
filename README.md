@@ -37,6 +37,11 @@ Can work under Kitematic
 - [System Administrator](https://nifi.apache.org/docs/nifi-docs/html/administration-guide.html)
 
 
+# ListenHTTP Processor
+
+The standard library has a built-in processor for an HTTP endpoint listener. That processor is named [ListenHTTP](https://nifi.apache.org/docs/nifi-docs/components/org.apache.nifi.processors.standard.ListenHTTP/index.html). You should set the *Listening Port* of the instantiated processor to `8081` if you follow the instructions from above.
+
+
 # Usage
 
 This image can either be used as a base image for building on top of NiFi or just to experiment with. I personally have not attempted to use this in a production use case.
