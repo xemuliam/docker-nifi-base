@@ -70,7 +70,7 @@ Kitematic will assign all ports and you'll be able to run HDF web-interface dire
 # How to use from Docker CLI
 
 1. Start Docker Quickstart Terminal
-2. Run command  `docker run -d -p 8080:8080 -p 8443:8443 xemuliam/nifi-base`
+2. Run command  `docker run -d -p 8080:8080 -p 8081:8081 -p 8443:8443 xemuliam/nifi-base`
 3. Check Docker machine IP  `docker-machine ls`
 4. Use IP from previous step in address bar of your favorite browser ` http://192.168.99.100:8080/nifi`
 
