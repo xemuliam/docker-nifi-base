@@ -2,8 +2,8 @@ FROM       openjdk:alpine
 MAINTAINER Viacheslav Kalashnikov <xemuliam@gmail.com>
 LABEL      VERSION="1.0.0" \
            RUN="docker run -d -p 8080:8080 -p 8081:8081 -p 8443:8443 xemuliam/nifi-base"
-ARG        DIST_MIRROR=http://archive.apache.org/dist/nifi/ \
-           VERSION=1.0.0
+ARG        DIST_MIRROR=http://archive.apache.org/dist/nifi
+ARG        VERSION=1.0.0
 ENV        NIFI_HOME=/opt/nifi
 RUN        apk update && apk add --upgrade curl && \
            mkdir -p ${NIFI_HOME} && \
