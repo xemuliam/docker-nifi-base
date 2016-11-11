@@ -64,7 +64,7 @@ Ensure the following pre-requisites are met (due to some blocker bugs in earlier
 3. Choose `nifi-base` image
 4. Click `Create` button
 
-Kitematic will assign all ports and you'll be able to run HDF web-interface directly from Kitematic.
+Kitematic will assign all ports and you'll be able to run NiFi web-interface directly from Kitematic.
 
 
 # How to use from Docker CLI
