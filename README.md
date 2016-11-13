@@ -62,7 +62,8 @@ Ensure the following pre-requisites are met (due to some blocker bugs in earlier
 1. Start Kitematic
 2. Enter `xemuliam` in serach box
 3. Choose `nifi-base` image
-4. Click `Create` button
+4. Choose tag `0.7.1`
+5. Click `Create` button
 
 Kitematic will assign all ports and you'll be able to run NiFi web-interface directly from Kitematic.
 
