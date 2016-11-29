@@ -17,8 +17,6 @@ Dockerized single-host NiFi.
 Deployment options out of the box:
 - Standalone NiFi node
 
-Can work under Kitematic
-
 
 # Exposed ports
 
