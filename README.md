@@ -1,4 +1,4 @@
-# NiFi-base ![](https://images.microbadger.com/badges/version/xemuliam/nifi-base:1.0.0.svg) ![](https://images.microbadger.com/badges/image/xemuliam/nifi-base:1.0.0.svg)
+# NiFi-base ![](https://images.microbadger.com/badges/version/xemuliam/nifi-base:1.1.0.svg) ![](https://images.microbadger.com/badges/image/xemuliam/nifi-base:1.1.0.svg)
 Basic and clean [Docker](https://www.docker.com/what-docker) image for [Apache NiFi](http://nifi.apache.org), based on [Alpine](http://alpinelinux.org) and [OpenJDK](http://openjdk.java.net)
 
                         ##         .
@@ -7,7 +7,7 @@ Basic and clean [Docker](https://www.docker.com/what-docker) image for [Apache N
            /"""""""""""""""""\___/ ===
       ~~~ {~~ ~~~~ ~~~ ~~~~ ~~~ ~ /  ===- ~~~
            \______ o   NiFi    __/
-             \    \   1.0.0 __/
+             \    \   1.1.0 __/
               \____\_______/
 
 # Overview
