@@ -11,8 +11,8 @@ Basic and clean [Docker](https://www.docker.com/what-docker) image for [Apache N
                ## ## ## ## ##    ===
            /"""""""""""""""""\___/ ===
       ~~~ {~~ ~~~~ ~~~ ~~~~ ~~~ ~ /  ===- ~~~
-           \______ o   NiFi    __/
-             \    \   1.1.0 __/
+           \______ o           __/
+             \    \         __/
               \____\_______/
 
 # Overview
