@@ -1,4 +1,4 @@
-FROM       openjdk:7-alpine
+FROM       openjdk:7-jre-alpine
 MAINTAINER Viacheslav Kalashnikov <xemuliam@gmail.com>
 ARG        DIST_MIRROR=http://archive.apache.org/dist/nifi
 ARG        VERSION=0.7.1
