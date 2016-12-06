@@ -49,6 +49,8 @@ The standard library has a built-in processor for an HTTP endpoint listener. Tha
 
 This image can either be used as a base image for building on top of NiFi or just to experiment with. I personally have not attempted to use this in a production use case.
 
+Please use corresponding branches from this repo to play with code.
+
 
 # Pre-Requisites
 Ensure the following pre-requisites are met (due to some blocker bugs in earlier versions). As of today, the latest Docker Toolbox and Homebrew are fine.
