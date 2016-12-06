@@ -18,6 +18,27 @@ Deployment options out of the box:
 - Standalone NiFi node
 
 
+## Version 1.0.0
+Version 1.0.0 of Apache NiFi is a major release that includes a brand new UI, framework level improvements and much more!
+
+Release Date: August 30, 2016
+
+There are many changes in the 1.0.0 release but the Application level highlights include:
+- UI Refresh
+ - The entire UI has been redone to have a cleaner, more modern look
+ - UI has also been reworked to promote a better User Expierence
+- Zero master clustering
+ - There is no longer a NiFi Cluster Manager (NCM)
+ - Cluster will now auto elect a Cluster Coordinator to oversee the cluster
+- Multi-tenant authorization and internal authorization/policy management
+ - There is no longer just the limited Administrator, Data Flow Manager, etc. roles
+ - Policies are fully customizable for each component and at the controller level as well
+- Deterministic template export
+ - Templates export is now deterministic and thus can now be version controlled
+
+A full list of issues that were resolved can be found at: https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12316020&version=12332640
+
+
 # Exposed ports
 
 - 8080 - NiFi web application port
