@@ -20,6 +20,35 @@ Deployment options out of the box:
 Can work under Kitematic
 
 
+## Version 0.7.1
+Version 0.7.1 of Apache NiFi focuses on addressing defects and security related improvements.
+
+Release Date: October 20, 2016
+
+Highlights of the 0.7.1 release include:
+- Important stability improvements
+ - Improved specific exception handling situations and synchronization in the content repository to avoid data loss.
+ - Improved stability of provenance repository when handling exceptions during indexing of events.
+- Improvements to existing capabilities
+ - Added SSL/TLS support to Kafka processors.
+ - Added features to ConsumeKafka to better align with features in GetKafka.
+ - Improved ConsumeJMS to copy message properties into flowfile attributes, and to support more message  - acknowledgement modes.
+ - Improved ConsumeJMS and PublishJMS for expression language support of destination name.
+ - Various improvements to JoltTransformJSON, PutS3Object, ListS3, ListFile, ModifyBytes and PutEmail  -  - processors.
+ - Deprecated some public API methods that were removed in the 1.0.0 release.
+- Defects addressed
+ - Fixed SiteToSiteReportingTask to not send duplicate events.
+ - Fixed issue where controller services that reference other controller services could be disabled on NiFi restart.
+ - Fixed issue with PublishKafka and PutKafka sending a flowfile to 'success' when it did not actually send the file to Kafka.
+ - Fixed issue that multiple HDFS processors could not work with different HDFS clusters.
+ - Fixed various issues with Kafka processors.
+ - Fixed GetHTTP and PostHTTP to use the SSL/TLS Protocol property of its SSLContextService.
+ - Fixed UnpackContent issues where it did not work with flowfile-stream or flowfile-tar content, and fixed concurrency issue.
+ - Fixed ListenHTTP to avoid leaking threads when attempting to bind to an address already in use.
+
+A full list of issues that were resolved can be found at https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12316020&version=12338025
+
+
 # Exposed ports
 
 - 8080 - NiFi web application port
