@@ -30,6 +30,18 @@ Deployment options out of the box:
 - 8443 - NiFi web application secure port
 
 
+# Volumes
+
+All below volumes can be mounted to docker host machine folders or shared folders to easy maintain data inside them. 
+
+NiFi-specific:
+- /opt/nifi/logs
+- /opt/nifi/flowfile_repository
+- /opt/nifi/database_repository
+- /opt/nifi/content_repository
+- /opt/nifi/provenance_repository
+
+
 # Official Documentation and Guides
 
 - [Overview](https://nifi.apache.org/docs.html)
