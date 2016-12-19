@@ -3,10 +3,11 @@ MAINTAINER Viacheslav Kalashnikov <xemuliam@gmail.com>
 ARG        DIST_MIRROR=http://archive.apache.org/dist/nifi
 ARG        VERSION=1.0.0
 ENV        NIFI_HOME=/opt/nifi
-RUN        apk update && apk add --upgrade curl && \
+RUN        apk update && apk add --upgrade bash curl && \
            mkdir -p ${NIFI_HOME} && \
            curl ${DIST_MIRROR}/${VERSION}/nifi-${VERSION}-bin.tar.gz | tar xvz -C ${NIFI_HOME} && \
            mv ${NIFI_HOME}/nifi-${VERSION}/* ${NIFI_HOME} && \
+           rm -rf ${NIFI_HOME}/nifi-${VERSION} && \
            rm -rf *.tar.gz && \
            apk del curl && \
            rm -rf /var/cache/apk/*
