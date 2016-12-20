@@ -7,6 +7,8 @@
 
 Basic and clean [Docker](https://www.docker.com/what-docker) image for [Apache NiFi](http://nifi.apache.org), based on [Alpine](http://alpinelinux.org) and [OpenJDK](http://openjdk.java.net)
 
+- ![Docker builds](https://img.shields.io/docker/automated/xemuliam/nifi-base.svg) ![Docker Pulls](https://img.shields.io/docker/pulls/xemuliam/nifi-base.svg) ![Docker Stars](https://img.shields.io/docker/stars/xemuliam/nifi-base.svg)
+
                         ##         .
                   ## ## ##        ==
                ## ## ## ## ##    ===
