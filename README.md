@@ -9,6 +9,7 @@ Basic and clean [Docker](https://www.docker.com/what-docker) image for [Apache N
 
 - ![Docker builds](https://img.shields.io/docker/automated/xemuliam/nifi-base.svg) ![Docker Pulls](https://img.shields.io/docker/pulls/xemuliam/nifi-base.svg) ![Docker Stars](https://img.shields.io/docker/stars/xemuliam/nifi-base.svg)
 
+```
                         ##         .
                   ## ## ##        ==
                ## ## ## ## ##    ===
@@ -17,6 +18,7 @@ Basic and clean [Docker](https://www.docker.com/what-docker) image for [Apache N
            \______ o   NiFi    __/
              \    \         __/
               \____\_______/
+```
 
 # Overview
 
