@@ -1,7 +1,7 @@
 FROM       openjdk:8-alpine
 MAINTAINER Viacheslav Kalashnikov <xemuliam@gmail.com>
 ARG        DIST_MIRROR=http://archive.apache.org/dist/nifi
-ARG        VERSION=1.1.0
+ARG        VERSION=1.1.1
 ENV        NIFI_HOME=/opt/nifi
 RUN        apk update && apk add --upgrade bash curl && \
            mkdir -p ${NIFI_HOME} && \
