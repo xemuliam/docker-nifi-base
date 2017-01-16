@@ -1,9 +1,9 @@
-FROM       openjdk:8-alpine
+FROM       alpine:3.5
 MAINTAINER Viacheslav Kalashnikov <xemuliam@gmail.com>
 ARG        DIST_MIRROR=http://archive.apache.org/dist/nifi
 ARG        VERSION=1.0.0
 ENV        NIFI_HOME=/opt/nifi
-RUN        apk update && apk add --upgrade bash curl && \
+RUN        apk update && apk add --upgrade bash curl openjdk8 && \
            mkdir -p ${NIFI_HOME} && \
            curl ${DIST_MIRROR}/${VERSION}/nifi-${VERSION}-bin.tar.gz | tar xvz -C ${NIFI_HOME} && \
            mv ${NIFI_HOME}/nifi-${VERSION}/* ${NIFI_HOME} && \
