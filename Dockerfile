@@ -1,4 +1,4 @@
-FROM       alpine:3.5
+FROM       alpine
 MAINTAINER Viacheslav Kalashnikov <xemuliam@gmail.com>
 ARG        DIST_MIRROR=http://archive.apache.org/dist/nifi
 ARG        VERSION=1.0.0
