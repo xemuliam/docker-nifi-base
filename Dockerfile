@@ -3,8 +3,8 @@ MAINTAINER Viacheslav Kalashnikov <xemuliam@gmail.com>
 ARG        DIST_MIRROR=http://archive.apache.org/dist/nifi
 ARG        VERSION=0.7.1
 ENV        NIFI_HOME=/opt/nifi \
-           JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk \
-           PATH=$PATH:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
+           JAVA_HOME=/usr/lib/jvm/java-1.7-openjdk \
+           PATH=$PATH:/usr/lib/jvm/java-1.7-openjdk/jre/bin:/usr/lib/jvm/java-1.7-openjdk/bin
 RUN        apk update && apk add --upgrade bash curl openjdk7 && \
            mkdir -p ${NIFI_HOME} && \
            curl ${DIST_MIRROR}/${VERSION}/nifi-${VERSION}-bin.tar.gz | tar xvz -C ${NIFI_HOME} && \
