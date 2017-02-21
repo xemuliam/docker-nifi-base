@@ -1,13 +1,13 @@
 # NiFi-base
 
-##1.x
+## 1.x
 - ![Version](https://images.microbadger.com/badges/version/xemuliam/nifi-base:1.1.2.svg) ![Layers](https://images.microbadger.com/badges/image/xemuliam/nifi-base:1.1.2.svg)
 - ![Version](https://images.microbadger.com/badges/version/xemuliam/nifi-base:1.1.1.svg) ![Layers](https://images.microbadger.com/badges/image/xemuliam/nifi-base:1.1.1.svg)
 - ![Version](https://images.microbadger.com/badges/version/xemuliam/nifi-base:1.1.0.svg) ![Layers](https://images.microbadger.com/badges/image/xemuliam/nifi-base:1.1.0.svg)
 - ![Version](https://images.microbadger.com/badges/version/xemuliam/nifi-base:1.0.1.svg) ![Layers](https://images.microbadger.com/badges/image/xemuliam/nifi-base:1.0.1.svg)
 - ![Version](https://images.microbadger.com/badges/version/xemuliam/nifi-base:1.0.0.svg) ![Layers](https://images.microbadger.com/badges/image/xemuliam/nifi-base:1.0.0.svg)
 
-##0.x
+## 0.x
 - ![Version](https://images.microbadger.com/badges/version/xemuliam/nifi-base:0.7.2.svg) ![Layers](https://images.microbadger.com/badges/image/xemuliam/nifi-base:0.7.2.svg)
 - ![Version](https://images.microbadger.com/badges/version/xemuliam/nifi-base:0.7.1.svg) ![Layers](https://images.microbadger.com/badges/image/xemuliam/nifi-base:0.7.1.svg)
 
