@@ -10,8 +10,8 @@ RUN        apk add --no-cache bash curl openjdk8 && \
            curl ${DIST_MIRROR}/${VERSION}/nifi-${VERSION}-bin.tar.gz | tar xvz -C ${NIFI_HOME} && \
            mv ${NIFI_HOME}/nifi-${VERSION}/* ${NIFI_HOME} && \
            rm -rf ${NIFI_HOME}/nifi-${VERSION} && \
-           rm -rf *.tar.gz
-RUN        cd ${NIFI_HOME}/lib && \
+           rm -rf *.tar.gz && \
+           cd ${NIFI_HOME}/lib && \
            find . \
                ! -path './bootstrap*' \
                ! -name 'javax.servlet-api*.jar' \
