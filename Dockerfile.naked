@@ -22,6 +22,8 @@ RUN        apk add --no-cache bash curl openjdk8 && \
                ! -name 'logback-classic*.jar' \
                ! -name 'logback-core*.jar' \
                ! -name 'nifi-api*.jar' \
+               ! -name 'nifi-dbcp-service-nar*.nar' \
+               ! -name 'nifi-distributed-cache-services-nar*.nar' \
                ! -name 'nifi-documentation*.jar' \
                ! -name 'nifi-framework-api*.jar' \
                ! -name 'nifi-framework-nar*.nar' \
@@ -30,6 +32,7 @@ RUN        apk add --no-cache bash curl openjdk8 && \
                ! -name 'nifi-jetty-bundle*.nar' \
                ! -name 'nifi-kerberos-iaa-providers-nar*.nar' \
                ! -name 'nifi-ldap-iaa-providers-nar*.nar' \
+               ! -name 'nifi-lookup-services-nar*.nar' \
                ! -name 'nifi-nar-utils*.jar' \
                ! -name 'nifi-properties*.jar' \
                ! -name 'nifi-provenance-repository-nar*.nar' \
@@ -40,6 +43,8 @@ RUN        apk add --no-cache bash curl openjdk8 && \
                ! -name 'nifi-standard-nar*.nar' \
                ! -name 'nifi-standard-services-api-nar*.nar' \
                ! -name 'nifi-update-attribute-nar*.nar' \
+               ! -name 'nifi-websocket-services-api-nar*.nar' \
+               ! -name 'nifi-websocket-services-jetty-nar*.nar' \
                ! -name 'slf4j-api*.jar' \
                -delete
 EXPOSE     8080 8081 8443
