@@ -1,6 +1,8 @@
 # NiFi-base
 
 ## 1.x
+- ![Version](https://images.microbadger.com/badges/version/xemuliam/nifi-base:1.5.0.svg) ![Layers](https://images.microbadger.com/badges/image/xemuliam/nifi-base:1.5.0.svg)
+- ![Version](https://images.microbadger.com/badges/version/xemuliam/nifi-base:1.4.0-naked.svg) ![Layers](https://images.microbadger.com/badges/image/xemuliam/nifi-base:1.4.0-naked.svg) __Naked NiFi without all unnecessary NARs__
 - ![Version](https://images.microbadger.com/badges/version/xemuliam/nifi-base:1.4.0.svg) ![Layers](https://images.microbadger.com/badges/image/xemuliam/nifi-base:1.4.0.svg)
 - ![Version](https://images.microbadger.com/badges/version/xemuliam/nifi-base:1.3.0-naked.svg) ![Layers](https://images.microbadger.com/badges/image/xemuliam/nifi-base:1.3.0-naked.svg) __Naked NiFi without all unnecessary NARs__
 - ![Version](https://images.microbadger.com/badges/version/xemuliam/nifi-base:1.3.0.svg) ![Layers](https://images.microbadger.com/badges/image/xemuliam/nifi-base:1.3.0.svg)
